@@ -20,9 +20,16 @@ public class MainActivity extends AppCompatActivity {
         addSeparator();
 
         initBarang();
-        showString += arrbarang[3].toString();
-        addSeparator();
-        showString += arrbarang[3].toString();
+//        showString += arrbarang[3].toString();
+//       addSeparator();
+//        showString += arrbarang[3].toString();
+//        showText.setText(showString)
+        transaksi trans1=new transaksi();
+        trans1.addBarang(arrbarang[2]);
+        trans1.addBarang(arrbarang[9]);
+        trans1.addBarang(arrbarang[7]);
+        showString += trans1.printTransaksi();
+        showString += trans1.max();
         showText.setText(showString);
     }
 

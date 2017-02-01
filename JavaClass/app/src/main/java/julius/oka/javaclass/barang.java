@@ -26,9 +26,7 @@ public class barang {
         return nama;
     }
 
-    public int getKategori() {
-        return kategori;
-    }
+    public int getKategori() {return kategori;}
     public String getStringKategori(){
         if (kategori==1)
             return "elektronik";
